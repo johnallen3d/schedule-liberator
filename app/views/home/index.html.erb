@@ -1,2 +1,15 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<h1>Pointstreak.com Schedule Liberation</h1>
+<p>Enter the url for the printable version of your teams schedule, select the format and hit go!</p>
+<p>To find your teams schedule page:</p>
+<ol>
+  <li>Visit the leagues home page</li>
+  <li>Click on the team in question</li>
+  <li>Click the SCHEDULE link under TEAM MENU</li>
+  <li>Click PRINT THIS PAGE</li>
+</ol>
+
+<%= simple_form_for Conversion.new do |f| %>
+  <%= f.input :url %>
+  <%= f.input :format, collection: Conversion.formats %>
+  <%= f.button :submit, 'GO!' %>
+<% end %>
