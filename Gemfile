@@ -52,3 +52,7 @@ group :test do
   gem "minitest-rails-shoulda", :github => 'rawongithub/minitest-rails-shoulda'
   gem "turn"
 end
+
+group :production do
+  gem 'pg'
+end
