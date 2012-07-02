@@ -1,0 +1,35 @@
+<div role="export">
+  Export:&nbsp;
+  <a data-role="gcal" class="btn btn-primary" href="#">
+    Google Calendar
+  </a>
+  <!--
+  <a data-role="ical" class="btn btn-success" href="#">
+    iCalendar
+  </a>
+  <a data-role="ics" class="btn btn-danger" href="#">
+    Yahoo Calendar
+  </a>
+  -->
+  <a data-role="csv" class="btn" href="#">
+    CSV
+  </a>
+</div>
+<table class="table table-striped table-bordered table-condensed">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Date</th>
+      <th>Time</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{#each schedule}}
+    <tr>
+      <td>{{title}}</td>
+      <td>{{start_date}}</td>
+      <td>{{start_time}}</td>
+    </tr>
+  {{/each}}
+  </tbody>
+</table>

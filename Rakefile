@@ -5,3 +5,11 @@
 require File.expand_path('../config/application', __FILE__)
 
 ScheduleLiberator::Application.load_tasks
+
+task :default => [:test]
+
+Rake::TestTask.new do |t|
+  t.libs.push "lib"
+  t.test_files = FileList['test/**/*_spec.rb']
+  t.verbose = true
+end

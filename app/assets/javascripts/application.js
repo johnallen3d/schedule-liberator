@@ -12,5 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.role
+//= require handlebars
 //= require twitter/bootstrap
 //= require_tree .
