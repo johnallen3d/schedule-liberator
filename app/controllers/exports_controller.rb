@@ -4,7 +4,7 @@ class ExportsController < ApplicationController
       schedule = ScheduleScraper.fetch(:pointstreak, params[:url])
       format = params[:to].to_sym
 
-      render format => schedule #, :content_type => 'text/calendar'
+      send_data schedule.send("to_#{format}")
     rescue Exception => e
       logger.info e
       render :nothing => true
