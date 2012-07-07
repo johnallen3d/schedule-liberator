@@ -1,26 +1,7 @@
-# ReadMe
+# Schedule Liberator
 
+A simple web wrapper for the [schedule-scrape gem](https://github.com/johnallen3d/schedule-scrape)
 
-## Deployment
+# TODO
 
-```
-ey deploy
-```
-Remove
-## Thanks
-
-The original scaffold for this application was created by [App Scrolls](http://appscrolls.org).
-
-The project was created with the following scrolls:
-
-* capybara
-* env_yaml
-* rails_basics
-* git
-* guard
-* jquery
-* rspec
-* twitter_bootstrap
-* simple_form
-* sqlite3
-
+1. TESTS?!?

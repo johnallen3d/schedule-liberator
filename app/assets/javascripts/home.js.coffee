@@ -1,4 +1,10 @@
 jQuery(() ->
+  $('@sites > li > a').click(() ->
+    $('.instructions').hide()
+    type = $(this).data('type')
+    $("@#{type}-instructions").show('blind')
+  )
+
   updateSchedule = ((content) ->
     $('@schedule').html(content)
   )

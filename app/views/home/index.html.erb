@@ -1,21 +1,33 @@
-<h1>Pointstreak.com Schedule Liberation</h1>
 <p>
-Enter the url for the printable version of your teams schedule and&nbsp;
-select the format!
+  Click on schedule site for instructions or paste teams schedule linke below
 </p>
-<p>To find your teams schedule page:</p>
-<ol>
-  <li>Visit the leagues home page</li>
-  <li>Click on the team in question</li>
-  <li>Click the SCHEDULE link under TEAM MENU</li>
-  <li>Click PRINT THIS PAGE</li>
-  <li>ex - http://www.pointstreak.com/players/print/players-team-schedule.html?teamid=385368&seasonid=9162</li>
-</ol>
+<ul role="sites">
+  <li><a href="#" data-type="streak">pointstreak.com</a></li>
+  <li><a href="#" data-type="ez">ezfacilities.com</a></li>
+</ul>
+<div role="streak-instructions" class="instructions">
+  <p>To find your teams printable schedule page:</p>
+  <ol>
+    <li>Visit the leagues home page</li>
+    <li>Click on the team in question</li>
+    <li>Click the SCHEDULE link under TEAM MENU</li>
+    <li>Click PRINT THIS PAGE</li>
+    <li>ex - http://www.pointstreak.com/players/print/players-team-schedule.html?teamid=385368&seasonid=9162</li>
+  </ol>
+</div>
+<div role="ez-instructions" class="instructions">
+  <p>To find your teams printable schedule page:</p>
+  <ol>
+    <li>Visit the leagues home page</li>
+    <li>Click on the team in question</li>
+    <li>ex - http://pinevilleice.ezleagues.ezfacility.com/teams/1026121/The-Schwartz.aspx</li>
+  </ol>
+</div>
 
 <%= simple_form_for Conversion.new do |f| %>
   <%# f.input :format, collection: Conversion.formats %>
   <%= f.input :url,
-    :label => "Pointstreak URL",
+    :label => "URL",
     :required => false,
     :input_html => { :role => "schedule-url" }
   %>
