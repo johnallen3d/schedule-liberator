@@ -1,5 +1,6 @@
 jQuery(() ->
-  $('@sites > li > a').click(() ->
+  $('@sites > li > a').click((e) ->
+    e.preventDefault()
     $('.instructions').hide()
     type = $(this).data('type')
     $("@#{type}-instructions").show('blind')
@@ -22,11 +23,11 @@ jQuery(() ->
     )
   )
 
-  $('@export a').live('click', () ->
+  $('@export a').live('click', (e) ->
+    e.preventDefault()
     url = $('@schedule-url').val()
     format = $(this).data('role')
 
-    # jQuery.post('/exports', { url: url, to: format})
     window.location = "/exports?url=#{encodeURI(url)}&to=#{format}"
   )
 )
