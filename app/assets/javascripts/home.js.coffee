@@ -1,7 +1,6 @@
 jQuery(() ->
   $('@sites > li > a').click((e) ->
     e.preventDefault()
-    $('.instructions').hide()
     type = $(this).data('type')
     $("@#{type}-instructions").show('blind')
   )

@@ -1,8 +1,7 @@
 class ConversionsController < ApplicationController
   def create
     begin
-      logger.info schedule_type
-      schedule = ScheduleScraper.fetch(schedule_type, params[:url])
+      schedule = ScheduleScraper.fetch(params[:url])
 
       render :json => { :schedule => schedule.to_h }
     rescue Exception => e

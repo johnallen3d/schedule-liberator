@@ -1,7 +1,7 @@
 class ExportsController < ApplicationController
   def create
     begin
-      schedule = ScheduleScraper.fetch(schedule_type, params[:url])
+      schedule = ScheduleScraper.fetch(params[:url])
       format = params[:to].to_sym
 
       send_data schedule.send("to_#{format}")
