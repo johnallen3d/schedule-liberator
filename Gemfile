@@ -8,7 +8,7 @@ gem 'jquery-rails'
 gem 'role-rails'
 gem "simple_form"
 gem "handlebars-rails", :github => 'brianjlandau/handlebars-rails'
-gem 'schedule-scraper' #, :path => "~/development/ruby/gems/schedule-scraper"
+gem 'schedule-scraper' # , :path => "~/development/ruby/gems/schedule-scraper"
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
