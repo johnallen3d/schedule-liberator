@@ -22,7 +22,7 @@ jQuery(() ->
     )
   )
 
-  $('@export a').live('click', (e) ->
+  $('@schedule').on('click', '@export a', (e) ->
     e.preventDefault()
     url = $('@schedule-url').val()
     format = $(this).data('role')
