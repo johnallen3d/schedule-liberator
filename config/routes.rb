@@ -2,6 +2,8 @@ ScheduleLiberator::Application.routes.draw do
   resources :conversions, only: [:create]
   # get :home => 'home#index'
   get 'exports' => 'exports#create'
+  get 'downloads' => 'home#downloads'
+
   root :to => 'home#index'
 
   # The priority is based upon order of creation:

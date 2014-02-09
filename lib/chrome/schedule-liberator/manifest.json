@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Schedule Scrape",
+  "description": "This extension download supported schedules.",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.pointstreak.com/*"],
+      "js": ["zepto.min.js", "scraper.js"]
+    }
+  ]
+}
+

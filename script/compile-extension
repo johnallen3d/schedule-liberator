@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cd lib/chrome
+tar -zcvf ../../public/downloads/schedule-liberator-extension.tar.gz schedule-liberator
