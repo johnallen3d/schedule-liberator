@@ -9,6 +9,8 @@ gem "handlebars-rails", :github => 'brianjlandau/handlebars-rails'
 gem 'schedule-scraper'
 # gem 'schedule-scraper', :path => "~/development/ruby/gems/schedule-scraper"
 
+gem 'thin'
+
 group :assets do
   gem 'sass-rails',   '~> 3.2.6'
   gem 'coffee-rails', '~> 3.2.2'
