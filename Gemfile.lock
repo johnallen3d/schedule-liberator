@@ -4,14 +4,6 @@ GIT
   specs:
     handlebars-rails (0.9.1)
 
-PATH
-  remote: ~/development/ruby/gems/schedule-scraper
-  specs:
-    schedule-scraper (0.6.1)
-      nibbler (~> 1.3.0)
-      nokogiri (~> 1.5.4)
-      ri_cal (~> 0.8.8)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -72,7 +64,7 @@ GEM
     mime-types (1.25)
     multi_json (1.8.0)
     nibbler (1.3.0)
-    nokogiri (1.5.10)
+    nokogiri (1.5.11)
     pg (0.16.0)
     polyglot (0.3.3)
     quiet_assets (1.0.2)
@@ -111,6 +103,10 @@ GEM
       railties (~> 3.2.0)
       sass (>= 3.1.10)
       tilt (~> 1.3)
+    schedule-scraper (0.6.1)
+      nibbler (~> 1.3.0)
+      nokogiri (~> 1.5.4)
+      ri_cal (~> 0.8.8)
     simple_form (2.1.0)
       actionpack (~> 3.0)
       activemodel (~> 3.0)
@@ -152,7 +148,7 @@ DEPENDENCIES
   rails (= 3.2.12)
   role-rails
   sass-rails (~> 3.2.6)
-  schedule-scraper!
+  schedule-scraper
   simple_form
   sqlite3
   therubyracer
