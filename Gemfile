@@ -10,6 +10,7 @@ gem 'schedule-scraper'
 # gem 'schedule-scraper', :path => "~/development/ruby/gems/schedule-scraper"
 
 gem 'thin'
+gem 'rack-cors', :require => 'rack/cors'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.6'
