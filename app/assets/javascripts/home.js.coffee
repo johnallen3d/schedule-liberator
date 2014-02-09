@@ -18,7 +18,7 @@ jQuery(() ->
       if data?.schedule?.length > 0
         updateSchedule(JST.events(data))
       else
-        updateSchedule('scheule not found, please check url')
+        updateSchedule('schedule not found, please check url')
     )
   )
 
