@@ -1,5 +1,7 @@
 class ConversionsController < ApplicationController
   def create
+    render :nothing => true and return unless params[:url].present?
+
     retries = 0
 
     begin
